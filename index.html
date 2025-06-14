@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarkari Result - Home (Clone)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background: #e3f6fc;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background: #1565c0;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0 8px 0;
+        }
+        .header img {
+            width: 90px;
+            margin-bottom: 8px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+        .nav {
+            background: #003c8f;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 22px;
+            display: block;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background 0.2s;
+        }
+        .nav a:hover {
+            background: #ffd600;
+            color: #003c8f;
+        }
+        .notice-marquee {
+            background: #fffde7;
+            color: #1565c0;
+            font-weight: bold;
+            padding: 8px 0;
+            border-bottom: 2px solid #ffd600;
+            font-size: 1.1em;
+        }
+        .main-content {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px #b3e5fc;
+            padding: 30px 18px 18px 18px;
+        }
+        .main-content h2 {
+            color: #1565c0;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 2em;
+        }
+        .main-content .links-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-bottom: 30px;
+        }
+        .main-content .links-grid a {
+            background: #e3f2fd;
+            border: 2px solid #1565c0;
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 18px 0;
+            border-radius: 8px;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
+            display: block;
+        }
+        .main-content .links-grid a:hover {
+            background: #1565c0;
+            color: #fff;
+        }
+        .main-content .updates {
+            background: #fffde7;
+            border: 1px solid #ffd600;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 18px;
+        }
+        .main-content .updates h3 {
+            color: #ff6f00;
+            margin-top: 0;
+        }
+        .main-content .updates ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+        .main-content .updates ul li {
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        .footer {
+            background: #1565c0;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0 10px 0;
+            margin-top: 40px;
+            font-size: 1em;
+        }
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .main-content .links-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .main-content {
+                padding: 12px 4px;
+            }
+            .main-content .links-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav a {
+                padding: 10px 8px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.sarkariresult.com/images/logo-new.png" alt="Sarkari Result Logo">
+        <h1>SARKARI RESULT</h1>
+        <div style="font-size:1.1em; margin-top:4px;">www.sarkariresult.com</div>
+    </div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Latest Jobs</a>
+        <a href="#">Results</a>
+        <a href="#">Admit Card</a>
+        <a href="#">Answer Key</a>
+        <a href="#">Syllabus</a>
+        <a href="#">Search</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="notice-marquee">
+        <marquee scrollamount="6">Sarkari Result : SarkariResult.Com Latest Sarkari Naukri, Result, Admit Card, Answer Key, Syllabus, Admission, Online Form, Offline Form, Certificate Verification, Important Document, Mobile Apps, and More!</marquee>
+    </div>
+    <div class="main-content">
+        <h2>Welcome to Sarkari Result</h2>
+        <div class="links-grid">
+            <a href="#">10th/12th Result</a>
+            <a href="#">UPSC Jobs</a>
+            <a href="#">Railway Jobs</a>
+            <a href="#">Bank Jobs</a>
+            <a href="#">Police Jobs</a>
+            <a href="#">SSC Jobs</a>
+            <a href="#">Teaching Jobs</a>
+            <a href="#">Defence Jobs</a>
+            <a href="#">Other Govt Jobs</a>
+        </div>
+        <div class="updates">
+            <h3>Latest Updates</h3>
+            <ul>
+                <li>UPSC Civil Services Pre Exam 2025 Online Form</li>
+                <li>SSC CHSL 2025 Tier I Admit Card</li>
+                <li>Railway RRB Group D Result 2025</li>
+                <li>UP Police Constable 2025 Answer Key</li>
+                <li>IBPS PO 2025 Notification Out</li>
+            </ul>
+        </div>
+        <div class="updates">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="#">Sarkari Result Android App</a></li>
+                <li><a href="#">Sarkari Naukri Alert</a></li>
+                <li><a href="#">Board Exam Results</a></li>
+                <li><a href="#">Admission Form</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 SarkariResult.com | For more details visit the official website.<br>
+        This is a demo clone for educational purposes only.
+    </div>
+</body>
+</html>
