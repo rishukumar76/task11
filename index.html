@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sarkari Result</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarkari Result - Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,23 +13,30 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background-color: white;
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #333;
     }
 
     header {
       background-color: #800000;
       color: white;
-      padding: 20px;
+      padding: 20px 10px;
       text-align: center;
     }
 
     header h1 {
+      font-size: 28px;
       margin-bottom: 5px;
     }
 
+    header p {
+      font-size: 14px;
+      color: #ddd;
+    }
+
     nav {
-      background-color: black;
+      background-color: #111;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -39,92 +47,76 @@
       padding: 12px 20px;
       text-decoration: none;
       font-weight: bold;
-      border-right: 1px solid #fff;
     }
 
-    nav a:last-child {
-      border-right: none;
+    nav a:hover {
+      background-color: #800000;
+    }
+
+    marquee {
+      background-color: #eed99b;
+      color: #b68b0c;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
     }
 
     .main {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
       padding: 20px;
-      text-align: center;
-    }
-
-    .main p {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-
-    .highlight-links a {
-      color: blue;
-      margin: 5px;
-      display: inline-block;
-      text-decoration: none;
-      font-size: 15px;
-    }
-
-    .highlight-links a:hover {
-      text-decoration: underline;
     }
 
     .banner-row {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 15px 0;
       gap: 10px;
+      margin: 20px 0;
     }
 
     .banner {
+      background-color: #800000;
       color: white;
-      padding: 10px;
-      text-align: center;
       font-weight: bold;
-      flex: 1 1 250px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 6px;
+      flex: 1 1 200px;
     }
 
-    .green { background: green; }
-    .blue { background: blue; }
-    .red { background: red; }
-    .orange { background: orange; }
-    .magenta { background: mediumvioletred; }
-    .darkblue { background: darkblue; }
-
     .content-boxes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 15px;
-      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
 
     .box {
-      flex: 1 1 30%;
       border: 2px solid #800000;
-      padding: 10px;
+      border-radius: 6px;
       background-color: #f9f9f9;
-      text-align: left;
+      overflow: hidden;
     }
 
     .box h3 {
       background-color: #800000;
       color: white;
-      padding: 8px;
-      font-size: 16px;
+      padding: 12px;
+      font-size: 18px;
     }
 
     .box a {
       display: block;
-      padding: 6px;
-      color: #0000ee;
-      text-decoration: none;
+      padding: 10px 15px;
+      color: #007BFF;
       font-size: 14px;
+      text-decoration: none;
+      border-top: 1px solid #eee;
     }
 
     .box a:hover {
+      background-color: #f1f1f1;
       text-decoration: underline;
     }
 
@@ -133,22 +125,14 @@
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 30px;
-    }
-
-    marquee {
-      background-color: #eed99b;
-      color: #b68b0c;
-      padding: 10px;
-      font-weight: bold;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img width="200" src="sarkari logo.png" alt="Lap" title="sarkari Result" />
-  <h1>SARKARI RESULT</h1>  
+  <h1>SARKARI RESULT</h1>
   <p>WWW.SARKARIRESULT.COM</p>
 </header>
 
@@ -159,131 +143,57 @@
   <a href="#">Admit Card</a>
   <a href="#">Answer Key</a>
   <a href="#">Syllabus</a>
-  <a href="#">Search</a>
-  <a href="#">Contact Us</a>
+  <a href="#">Contact</a>
 </nav>
 
-<marquee scrollamount="5">Breaking: SSC GD Constable 2025 Notification Released | UPTET 2025 Online Form Started | UPSC Prelims 2025 Admit Card Available</marquee>
+<marquee>SSC GD 2025 Notification Released | UPSC CDS II Apply Now | UPTET 2025 Form Available | New Admit Cards Live</marquee>
 
 <div class="main">
-  <p><strong>Sarkari Result :</strong> SarkariResult.Com Sarkari Naukri Latest Jobs Online Form at Sarkari Results 2025</p>
-  <p style="color: red; font-weight: bold;">Welcome to No. 1 Education Portal Sarkari Result 2025</p>
-
-  <div class="highlight-links">
-    <a href="#">Sarkari Result Android App</a>
-    <a href="#">Sarkari Result Youtube Channel</a>
-    <a href="#">Sarkari Result Apple / IOS App</a>
-    <a href="#">Follow Instagram</a><br>
-    <a href="#">UPPSC 71th Online Form</a>
-    <a href="#">UP Police Constable Form</a>
-    <a href="#">UP Scholarship Form</a>
-  </div>
   <div class="banner-row">
-    <div class="banner green">UPSSSC PET 2025<br>Apply Online</div>
-    <div class="banner blue">UPSC CDS II 2025<br>Apply Online</div>
-    <div class="banner orange">UPSC NDA II 2025<br>Apply Online</div>
-    <div class="banner red">UP ITI Admissions<br>Apply Online</div>
-    <div class="banner magenta">UPESSC Asst Professor<br>Apply Online</div>
-    <div class="banner darkblue">Railway RRB NTPC<br>Admit Card</div>
+    <div class="banner">UPSSSC PET 2025<br>Apply Online</div>
+    <div class="banner">SSC CGL 2025<br>Apply Now</div>
+    <div class="banner">UP Police<br>Constable Vacancy</div>
+    <div class="banner">Railway RRB<br>NTPC Admit Card</div>
   </div>
+
   <div class="content-boxes">
-    <div class="box">
-      <h3>Result</h3>
-      <a href="#">UPSC Civil Services IAS / IFS Pre Result 2025</a>
-      <a href="#">SBI Clerk Mains Result 2025</a>
-      <a href="#">Bihar CET B.Ed 2 Year Result 2025</a>
-      <a href="#">Jharkhand Board JAC Class 12th Arts Result 2025 Declared</a>
-      <a href="#">UPSC CDS II 2024 Marks</a>
-      <a href="#">RSSB Junior Instructor Result 2025</a>
-      <a href="#">OFSS Bihar Class 11th Admissions First Merit List 2025</a>
-      <a href="#">JEE Advanced 2025 Result Declared</a>
-      <a href="#">Bihar Board BSEB Class 10th Matric, Class 12th Inter Compartment Result 2025</a>
-      <a href="#">Jharkhand Board JAC Class 12th Science / Commerce Result 2025 Declared</a>
-      <a href="#">Bihar Police BPSSC SI Prohibition Result 2025</a>
-    </div>
-    <div class="box">
-      <h3>Admit Card</h3>
-      <a href="#">UPPSC UP PGT 2022 Exam Postponed Notice</a>
-      <a href="#">RPSC RAS 2024 Mains Exam City / Admit Card</a>
-      <a href="#">UPSC IES / ISS Admit Card 2025</a>
-      <a href="#">MPESB ADDET 2025 Admit Card</a>
-      <a href="#">RSSB Live Stock Assistant / Account Assistant Exam City / Admit Card</a>
-      <a href="#">DUVASU Mathura PVT Admit Card 2025</a>
-      <a href="#">BSPHCL JEE GTO Admit Card 2025</a>
-      <a href="#">NEET PG 2025 New Exam Date</a>
-      <a href="#">Bihar ITICAT 2025 Admit Card</a>
-      <a href="#">NTA UGC NET June 2025 Subject Wise Exam Date</a>
-    </div>
     <div class="box">
       <h3>Latest Jobs</h3>
-      <a href="#">Coast Guard Navik / Yantrik CGEPT 01/2026</a>
+      <a href="#">SSC CGL 2025 Online Form</a>
+      <a href="#">UPPSC Assistant Professor Vacancy</a>
       <a href="#">BPSC Motor Vehicle Inspector</a>
-      <a href="#">UPPSC Assistant Professor</a>
-      <a href="#">SSC Combined Graduate Level CGL Online Form 2025</a>
-      <a href="#">Bihar BTSC Staff Nurse Online Form 2025 Extended</a>
-      <a href="#">SSC Combined Hindi Translators JHT Online Form 2025</a>
-      <a href="#">SSC Stenographer Grade C and D Online Form 2025</a>
-      <a href="#">Army School AWES TGT, PGT, PRT Online Form 2025</a>
-      <a href="#">Bihar Panchayati Raj Technical Assistant Online Form 2025</a>
-      <a href="#">UPSC ORA Operation Officer and Other Various Post Online Form 2025</a>
-      <a href="#">UPPSC Staff Nurse Unani Online Form 2025</a>
+      <a href="#">UP Police Constable Online Form</a>
+      <a href="#">Railway ALP Recruitment</a>
     </div>
-  </div>
-  <div class="content-boxes">
     <div class="box">
-      <h3>Answer Key</h3>
-      <a href="#">NVS Non Teaching Post Answer Key 2025</a>
-      <a href="#">Railway RRB Stage II Exam Answer Key 2025</a>
-      <a href="#">NTA NEET UG 2025 Answer Key and Objection</a>
-      <a href="#">GPAT 2025 Answer Key</a>
-      <a href="#">UPSSSC Assistant Accountant Revised Answer Key 2025</a>
-      <a href="#">View More</a>
+      <h3>Admit Cards</h3>
+      <a href="#">UPSC CDS II Admit Card 2025</a>
+      <a href="#">UPSSSC PET Admit Card</a>
+      <a href="#">RRB Group D Admit Card</a>
+      <a href="#">BPSC Mains Admit Card</a>
+      <a href="#">CTET July 2025 Admit Card</a>
+    </div>
+    <div class="box">
+      <h3>Results</h3>
+      <a href="#">UPSC CSE Pre Result 2025</a>
+      <a href="#">SSC GD Result 2025</a>
+      <a href="#">UP Board 12th Result 2025</a>
+      <a href="#">JEE Advanced Result</a>
+      <a href="#">Railway NTPC Result</a>
     </div>
     <div class="box">
       <h3>Syllabus</h3>
-      <a href="#">NTA JEEMAIN Syllabus 2025</a>
-      <a href="#">UPSSSC Homeopathic Pharmacist Syllabus 2024</a>
-      <a href="#">UPSSSC JE Civil Syllabus 2024</a>
-      <a href="#">UPSSSC Assistant Store Keeper Syllabus 2024</a>
-      <a href="#">UPSSSC BCG Technician Syllabus 2024</a>
-      <a href="#">View More</a>
-    </div>
-    <div class="box">
-      <h3>Admission</h3>
-      <a href="#">UP SCVTUP ITI Admissions Online Form 2025 Extended</a>
-      <a href="#">MSDSU Azamgarh UG / PG Admissions Online Form 2025</a>
-      <a href="#">NTA NTET 2025 Online Form</a>
-      <a href="#">JOSAA 2025 Online Counselling</a>
-      <a href="#">UPCNET 2025 Online Counseling</a>
-      <a href="#">NVS Class 6th Admissions Online Form 2026</a>
-      <a href="#">JEE Advanced AAT Registration 2025</a>
-      <a href="#">MPESB PBBSc BSc Nursing and MSc Nursing Online Form 2025</a>
-      <a href="#">MUIT Diploma Admissions Online Form 2025</a>
-      <a href="#">MPESB Nursing Admissions PNST, GNM, MST Online Form 2025</a>
-      <a href="#">UPMSP UP Board Compartment Online Form 2025</a>
-    </div>
-  </div>
-  <div class="content-boxes">
-    <div class="box">
-      <h3>Certificate Verification</h3>
-      <a href="#">NTA UGC NET December 2024 E Certificate Download</a>
-      <a href="#">MPPSC SET 2024 E Certificate</a>
-      <a href="#">UPSSSC PET 2023 Certificate</a>
-      <a href="#">Voter ID Online Form 2024, E EPIC Download</a>
-    </div>
-    <div class="box">
-      <h3>Important</h3>
-      <a href="#">MP Rojgar Panjiyan 2025</a>
-      <a href="#">UP Scholarship Online Form 2024</a>
-      <a href="#">SSC OTR Online Form 2024</a>
-      <a href="#">Sahara Refund Portal Online</a>
-      <a href="#">UPSSSC One Time Registration OTR Online Form 2023</a>
+      <a href="#">UPSC IAS Syllabus</a>
+      <a href="#">SSC CGL 2025 Syllabus</a>
+      <a href="#">RRB ALP Syllabus</a>
+      <a href="#">UP Police Constable Syllabus</a>
+      <a href="#">BPSC Syllabus</a>
     </div>
   </div>
 </div>
 
 <footer>
-  <p>Link for official website: &nbsp;<a href="https://www.sarkariresult.com/" target="_blank" style="color: #fff; text-decoration: underline;">sarkariresult</a></p>
+  <p>&copy; 2025 SarkariResult.com | All rights reserved</p>
 </footer>
 
 </body>
